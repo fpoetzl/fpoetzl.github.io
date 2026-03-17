@@ -3017,7 +3017,8 @@ input, select, textarea {
 				-moz-flex-direction: column-reverse;
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
-				flex-direction: column-reverse;
+				/* flex-direction: column-reverse; */
+				flex-direction: column;  /* added fmp */
 				text-align: center;
 			}
 
@@ -3027,6 +3028,7 @@ input, select, textarea {
 					-ms-flex: 0 1 auto;
 					flex: 0 1 auto;
 					width: 100%;
+					margin-bottom: 1.0rem;  /* added fmp */
 				}
 
 					.spotlight .content header.major h2:after {

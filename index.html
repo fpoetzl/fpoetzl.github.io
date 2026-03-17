@@ -35,6 +35,24 @@
                         background: #f5e0ff;          /* warmer pink-purple tint */
                         border-color: #a66bd4;
                 }
+                .entry .line {
+                        display: block;
+                }
+                .video-container {
+                        position: relative;
+                        width: 100%;
+                        max-width: 100%;
+                        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                        height: 0;
+                }
+
+                .video-container iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                }
                 </style>
                 <style>
 #wrapper #main .side-by-side {
@@ -281,44 +299,64 @@
 									<h2>Curriculum Vitae</h2>
 									<div class="rounded-box mid">
                                                                                 <header>
-                                                                                        <h3>Employment</h3>
+                                                                                        <h3><strong>Employment</strong></h3>
                                                                                 </header>
-                                                                                <p>
-                                                                                        Oct 2022 – present: Postdoctoral Researcher at Institute for Astrophysics FORTH<br/>
-                                                                                        Sep 2021 – Sep 2022: Lecturer/Researcher at University College Cork<br/>
-                                                                                        Mar 2021 – Aug 2021: Postdoctoral researcher at Max-Planck-Institut für Radioastronomie<br/>
-                                                                                        Nov 2017 – Mar 2021: Doctoral researcher at Max-Planck-Institut für Radioastronomie<br/>
+                                                                                <p class="entry">
+                                                                                        <span class="line">Oct 2022 – present: Postdoctoral Researcher at Institute for Astrophysics FORTH</span>
+                                                                                        <span class="line">Sep 2021 – Sep 2022: Lecturer/Researcher at University College Cork</span>
+                                                                                        <span class="line">Mar 2021 – Aug 2021: Postdoctoral researcher at Max-Planck-Institut für Radioastronomie</span>
+                                                                                        <span class="line">Nov 2017 – Mar 2021: Doctoral researcher at Max-Planck-Institut für Radioastronomie</span>
                                                                                 </p>
                                                                         </div>
                                                                         <br/>
                                                                         <div class="rounded-box warm">
                                                                                 <header>
-                                                                                        <h3>Education</h3>
+                                                                                        <h3><strong>Education</strong></h3>
                                                                                 </header>
-                                                                                <p>
-                                                                                        Mar 2021: PhD in Astrophysics, thesis on<br/>
+                                                                                <!-- <p>
+                                                                                        Mar 2021: PhD in Astrophysics, with thesis on<br/>
                                                                                                 <i>Space-VLBI studies of the parsec-scale jet in the quasar 3C 345</i><br/>
                                                                                                 Under supervision of Prof. Eduardo Ros and Dr. Andrei Lobanov at the Max-Planck-Institut für Radioastronomie<br/><br/>
                                                                                         
                                                                                         Dec 2016: Master in Astrophysics, with thesis on<br/>
                                                                                                 <i>Comparison of CO line and dust continuum emission as tracers of molecular gas masses through cosmic time</i><br/>
                                                                                                 Under supervision of Prof. Dr. Karl Menten and Dr. Axel Weiß at the Max-Planck-Institut für Radioastronomie<br/><br/>
+                                                                                        
                                                                                         Sep 2014: Bachelor in Physics, with thesis on<br/>
                                                                                                 <i>Submillimeter observations of lensed quasar host galaxies</i><br/>
                                                                                                 Under supervision of Prof. Dr. Frank Bertoldi and Dr. Markus Albrecht at the Argelander-Institut für Astronomie (AIfA) of the university of Bonn<br/>
-                                                                                </p>
+                                                                                </p> -->
+                                                                                <!-- <p> -->
+                                                                                        <p class="entry">
+                                                                                                Mar 2021: PhD in Astrophysics, with thesis on<br/>
+                                                                                                <span class="line"><i>Space-VLBI studies of the parsec-scale jet in the quasar 3C 345</i></span>
+                                                                                                <span class="line">Under supervision of Prof. Eduardo Ros and Dr. Andrei Lobanov at the Max-Planck-Institut für Radioastronomie</span>
+                                                                                        </p>
+
+                                                                                        <p class="entry">
+                                                                                                Dec 2016: Master in Astrophysics, with thesis on<br/>
+                                                                                                <span class="line"><i>Comparison of CO line and dust continuum emission as tracers of molecular gas masses through cosmic time</i></span>
+                                                                                                <span class="line">Under supervision of Prof. Dr. Karl Menten and Dr. Axel Weiß at the Max-Planck-Institut für Radioastronomie</span>
+                                                                                        </p>
+
+                                                                                        <p class="entry">
+                                                                                                Sep 2014: Bachelor in Physics, with thesis on<br/>
+                                                                                                <span class="line"><i>Submillimeter observations of lensed quasar host galaxies</i></span>
+                                                                                                <span class="line">Under supervision of Prof. Dr. Frank Bertoldi and Dr. Markus Albrecht at the Argelander-Institut für Astronomie (AIfA) of the university of Bonn</span>
+                                                                                        </p>
+                                                                                <!-- </p> -->
                                                                         </div>
                                                                         <br/>
                                                                         <div class="rounded-box light">
                                                                                 <header>
-                                                                                        <h3>Outreach activities</h3>
+                                                                                        <h3><strong>Outreach activities</strong></h3>
                                                                                 </header>
-                                                                                <p>
-                                                                                        Nov 2024 - present: Member of the EHT Social Media Committee<br/>
-                                                                                        Sep 2019 – Sep 2021: Team member of Astronomy on Tap Bonn, 
-                                                                                        moderating and organizing public talks on astronomical and related topics<br/>
-                                                                                        Jan 2021 – Aug 2021: Team member of RadioViews, a platform to convey astronomical 
-                                                                                        research in video format<br/>
+                                                                                <p class="entry">
+                                                                                        <span class="line">Nov 2024 - present: Member of the EHT Social Media Committee</span>
+                                                                                        <span class="line">Sep 2019 – Sep 2021: Team member of Astronomy on Tap Bonn, 
+                                                                                        moderating and organizing public talks on astronomical and related topics</span>
+                                                                                        <span class="line">Jan 2021 – Aug 2021: Team member of RadioViews, a platform to convey astronomical 
+                                                                                        research in video format</span>
                                                                                 </p>
                                                                         </div>
                                                                         
@@ -340,8 +378,43 @@
                                                         <section id="outreach" class="main special">
 								<header class="major">
 									<h2>Talks & Events</h2>
-                                                                        
-                                                                        <p>
+                                                                        <p>Seminar at IA FORTH, Nov 16, 2022</p>
+                                                                        <div class="video-container">
+                                                                                <iframe 
+                                                                                src="https://www.youtube.com/embed/aQBuF77SvzQ"
+                                                                                frameborder="0"
+                                                                                allowfullscreen>
+                                                                                </iframe>
+                                                                        </div>
+                                                                        <p></p>
+                                                                        <p>Public outreach talk at Astronomy on Tap Bonn (virtual), May 25, 2021</p>
+                                                                        <div class="video-container">
+                                                                                <iframe 
+                                                                                src="https://www.youtube.com/embed/YvoaiGWCxgQ#t=40m50s"
+                                                                                frameborder="0"
+                                                                                allowfullscreen>
+                                                                                </iframe>
+                                                                        </div>
+                                                                        <p></p>
+                                                                        <p>Public outreach talk at Astronomy on Tap Bonn, January 29, 2018 (German)</p>
+                                                                        <div class="video-container">
+                                                                                <iframe 
+                                                                                src="https://www.youtube.com/embed/yxd7-oXoW8M"
+                                                                                frameborder="0"
+                                                                                allowfullscreen>
+                                                                                </iframe>
+                                                                        </div>
+                                                                        <p></p>
+                                                                        <p>RadioViews Episode #5</p>
+                                                                        <div class="video-container">
+                                                                                <iframe 
+                                                                                src="https://www.youtube.com/embed/KVQb960mg34"
+                                                                                frameborder="0"
+                                                                                allowfullscreen>
+                                                                                </iframe>
+                                                                        </div>
+
+                                                                        <!-- <p>
                                                                                 Seminar at IA FORTH, Nov 16, 2022<br/>
                                                                                 <iframe width="420" height="315"
                                                                                 src="https://www.youtube.com/embed/aQBuF77SvzQ">
@@ -364,7 +437,7 @@
                                                                                 <iframe width="420" height="315"
                                                                                 src="https://www.youtube.com/embed/KVQb960mg34">
                                                                                 </iframe> 
-                                                                        </p>
+                                                                        </p> -->
 								</header>
 							</section>
 
