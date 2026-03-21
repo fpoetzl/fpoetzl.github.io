@@ -2967,6 +2967,23 @@ input, select, textarea {
 				}
 
 		}
+		
+		/* added by fmp */
+		@media screen and (max-width: 736px) {
+
+			#intro .spotlight {
+				display: flex;
+				flex-direction: column;
+			}
+
+			#intro .spotlight .content {
+				order: 1;
+			}
+
+			#intro .spotlight .image {
+				order: 2;
+			}
+		}
 
 /* Spotlight */
 
